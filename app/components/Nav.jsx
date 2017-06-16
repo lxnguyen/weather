@@ -15,10 +15,12 @@ const Nav = React.createClass({
 	},
 	render: function() {
 		return (
-			<div className="top-bar">
+			<nav className="top-bar">
 				<div className="top-bar-left">
 					<ul className="menu">
-						<li className="menu-text"> React Weather App</li>
+						<li>
+							<IndexLink to="/" className="menu-text">Weather App </IndexLink>
+						</li>
 						<li>
 							<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
 						</li>
@@ -42,7 +44,7 @@ const Nav = React.createClass({
 					</ul>
 					</form>
 				</div>
-			</div>
+			</nav>
 		)		
 	}
 });
